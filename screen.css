@@ -80,22 +80,23 @@ h3{
 h4{
     text-align:center;
     color: black;
-    font-size: 100%;
+    font-size: 125%;
     padding: 6px;
 }
 h5{
     text-align:center;
     color: black;
-    font-size: 100%;
+    font-size: 125%;
     padding: 6px;
 }
 h6{
     text-align:center;
     color: black;
-    font-size: 100%;
+    font-size: 125%;
     padding: 6px;
 }
 p{
+    text-align:center;
     color: black;
 	padding: 6px 0;
 	font-size: 100%;
@@ -141,10 +142,6 @@ p{
   grid-row-gap: 3em;
   grid-column-gap: 3em;
 }
-container{
-    display:flex;
-    flex-direction:column;
-}
 block{
   text-align: left;
   color: black;
@@ -159,7 +156,7 @@ div.content {
   justify-content: center;
   align-content: space-between;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:800px){
 .content{
 grid-template-columns: 1fr;
 grid-template-rows: auto;
