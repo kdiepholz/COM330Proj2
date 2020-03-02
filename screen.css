@@ -52,8 +52,8 @@ img,audio,video{
     margin-right:auto;
     max-width:35%;
     max-height:35%;
-    padding-bottom: 0.5em; /*8px/16px=0.5em*/
-    padding-top: 0.5em; /*8px/16px=0.5em*/
+    padding-bottom: 0.5em;  
+    padding-top: 0.5em;
     padding-left: 1.125em;
 }
 h1{
