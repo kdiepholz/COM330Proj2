@@ -64,45 +64,33 @@ h1{
 	padding: 8px 0;
 }
 h2{
-    text-align:center;
-    color: black;
+	color: black;
+    text-align: center;
     font-weight:bold;
-	font-size: 150%;
-	padding: 6px;
-}
-h3{
-    text-align:center;
-    color: black;
-    font-weight:bold;
-    font-size: 150%;
-    padding: 6px;
-}
-h4{
-    text-align:center;
-    color: black;
-    font-size: 125%;
-    padding: 6px;
-}
-h5{
-    text-align:center;
-    color: black;
-    font-size: 125%;
-    padding: 6px;
-}
-h6{
-    text-align:center;
-    color: black;
-    font-size: 125%;
-    padding: 6px;
+	font-size: 200%;
+	text-decoration:underline;
+	padding: 8px 0;
 }
 p{
+	font-family:Comic Sans MS, Comic Sans, cursive;
+    text-align:left;
+    color: black;
+	padding: 6px 0;
+	font-size: 85%;
+	hyphens: auto;
+}
+p1{
+	font-family:Comic Sans MS, Comic Sans, cursive;
     text-align:center;
     color: black;
 	padding: 6px 0;
 	font-size: 100%;
 	hyphens: auto;
 }
-.biography{
+div.outro{
+	text-align:center;
+}
+.background{
     color: white;
 	height: 100%;
 	margin: auto;
@@ -111,7 +99,7 @@ p{
     display:block;
     max-width:80%;
     max-height:80%
-    padding-bottom: 0.5em;
+    padding-bottom: .5em;
     padding-top: 0.5em;
     padding-left: 1.125em;
 }
@@ -119,7 +107,7 @@ p{
     display: block;
     max-width:65%;
     max-height:65%;
-    padding-bottom: 0.5em;
+    padding-bottom: .5em;
     padding-top: 0.5em;
     padding-left: 1.125em;
 }
@@ -127,12 +115,13 @@ p{
     display:block;
     max-width:83%;
     max-height:83%;
-    padding-bottom: 0.5em;
+    padding-bottom: .5em;
     padding-top: 0.5em;
     padding-left: 1.125em;
 }
-.content{
-  display: grid;
+
+/*div.content{
+  display: block;
   padding-top: 2em;
   border-top: .1em solid black;
   grid-template-columns: 1fr 1fr 1fr;
@@ -142,36 +131,38 @@ p{
   grid-row-gap: 3em;
   grid-column-gap: 3em;
 }
-block{
+
+div.block{
   text-align: left;
   color: black;
   line-height: 1.5em;
   padding-left: 1em;
   padding-right: 1.125em;
 }
-div.content {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-between;
+*/
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 @media screen and (max-width:800px){
-.content{
-grid-template-columns: 1fr;
-grid-template-rows: auto;
-grid-template-areas:
-    "Swimming"
-    "Video Games"
-    "Climbing"
+.column{
+width:100%;
 }
 html{
   padding: 2em;
 }
 h1 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 p {
-  font-size: 1.25em;
-  line-height: 1.25em;
+  font-size: .75em;
+  line-height: 1em;
 }
